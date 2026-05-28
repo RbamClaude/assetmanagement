@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apex Asset Management delivers personalized, expert-driven investment strategies built on decades of excellence and unwavering transparency.">
+  <title>Apex Asset Management – Grow Your Wealth with Confidence</title>
+
+  <!-- Google Fonts: Playfair Display (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================================================
+       NAVIGATION — sticky, turns solid on scroll
+       =================================================== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Apex Asset Management — home">
+        Apex Asset Management
+      </a>
+
+      <!-- Hamburger (mobile only) -->
+      <button
+        class="nav-hamburger"
+        id="hamburger"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect y="4"  width="24" height="2" rx="1" fill="currentColor"/>
+          <rect y="11" width="24" height="2" rx="1" fill="currentColor"/>
+          <rect y="18" width="24" height="2" rx="1" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#hero"         class="nav-link">Home</a></li>
+        <li><a href="#why-us"       class="nav-link">Why Us</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===================================================
+         HERO — full viewport, counters, two CTAs
+         =================================================== -->
+    <section class="hero" id="hero" aria-label="Hero — Grow Your Wealth with Confidence">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Trusted by over 1,200 clients worldwide</p>
+        <h1 class="hero-headline">Grow Your Wealth<br>with Confidence</h1>
+        <p class="hero-subheadline">
+          Apex Asset Management delivers bespoke investment strategies built on
+          25 years of expertise, rigorous research, and complete transparency —
+          so your financial future is always in expert hands.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#why-us"  class="btn btn-outline">Learn More</a>
+        </div>
+
+        <!-- Animated counters — JS triggers count-up on first scroll into view -->
+        <div class="hero-stats" aria-label="Key statistics">
+          <div class="stat">
+            <span
+              class="stat-number"
+              data-target="4.2"
+              data-suffix="B+"
+              data-prefix="$"
+              aria-label="4.2 billion dollars assets under management"
+            >$0</span>
+            <span class="stat-label">Assets Under Management</span>
+          </div>
+          <div class="stat">
+            <span
+              class="stat-number"
+              data-target="1200"
+              data-suffix="+"
+              data-prefix=""
+              aria-label="Over 1200 clients served"
+            >0</span>
+            <span class="stat-label">Clients Served</span>
+          </div>
+          <div class="stat">
+            <span
+              class="stat-number"
+              data-target="25"
+              data-suffix="+"
+              data-prefix=""
+              aria-label="25 plus years of experience"
+            >0</span>
+            <span class="stat-label">Years of Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         WHY US — 4 USP cards
+         =================================================== -->
+    <section class="section why-us" id="why-us" aria-labelledby="why-us-title">
+      <div class="container">
+        <header class="section-header animate">
+          <p class="section-eyebrow">Our Difference</p>
+          <h2 class="section-title" id="why-us-title">Why Choose Us</h2>
+          <p class="section-subtitle">
+            We combine proven expertise with a client-first philosophy to help you
+            achieve financial independence on your terms.
+          </p>
+        </header>
+
+        <div class="cards-grid">
+
+          <!-- Card 1: Personalized Strategy -->
+          <article class="card animate">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Compass icon -->
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="18" r="3.5" fill="currentColor"/>
+                <line x1="18" y1="2"  x2="18" y2="8"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="18" y1="28" x2="18" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="2"  y1="18" x2="8"  y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="28" y1="18" x2="34" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="18" y1="18" x2="24" y2="12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Personalized Strategy</h3>
+            <p class="card-desc">
+              Every client receives a bespoke plan tailored to their risk tolerance, timeline,
+              and goals — never a one-size-fits-all product.
+            </p>
+          </article>
+
+          <!-- Card 2: Proven Track Record -->
+          <article class="card animate">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Upward chart icon -->
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <polyline points="3,28 12,17 18,22 26,11 33,7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="26,7 33,7 33,14"              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="3" y1="33" x2="33" y2="33"           stroke="currentColor" stroke-width="2"   stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Proven Track Record</h3>
+            <p class="card-desc">
+              25 years of consistent outperformance across market cycles — our disciplined
+              approach has stood the test of time through bull and bear markets alike.
+            </p>
+          </article>
+
+          <!-- Card 3: Transparent Fees -->
+          <article class="card animate">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Shield with checkmark -->
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <path d="M18 3 L32 9 L32 20 C32 27.5 25.5 33 18 35 C10.5 33 4 27.5 4 20 L4 9 Z"
+                      stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <polyline points="12,18 16,23 24,13"
+                          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Transparent Fees</h3>
+            <p class="card-desc">
+              No hidden charges, no surprise costs. You deserve complete clarity on what you
+              pay — and exactly what you receive in return.
+            </p>
+          </article>
+
+          <!-- Card 4: Expert Advisors -->
+          <article class="card animate">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Team/people icon -->
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <circle cx="13" cy="12" r="5.5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="23" cy="12" r="5.5" stroke="currentColor" stroke-width="2"/>
+                <path d="M2 31 C2 24.5 6.9 20 13 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M23 20 C29.1 20 34 24.5 34 31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M13 20 C15.5 20 18 21.2 18 24 C18 21.2 20.5 20 23 20"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Expert Advisors</h3>
+            <p class="card-desc">
+              Our CFA-certified team brings deep expertise across equities, fixed income,
+              alternatives, and estate planning to every client relationship.
+            </p>
+          </article>
+
+        </div><!-- /cards-grid -->
+      </div>
+    </section>
+
+    <!-- ===================================================
+         TESTIMONIALS — auto-rotating carousel
+         =================================================== -->
+    <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section-header animate">
+          <p class="section-eyebrow">Client Stories</p>
+          <h2 class="section-title" id="testimonials-title">What Our Clients Say</h2>
+          <p class="section-subtitle">
+            Hear from real clients who have entrusted their financial future to Apex.
+          </p>
+        </header>
+
+        <!-- Carousel: auto-rotates every 5 s; prev/next + dots for manual control -->
+        <div class="carousel animate"
+             role="region"
+             aria-label="Client testimonials"
+             aria-live="polite">
+
+          <div class="carousel-track" id="carousel-track">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card active"
+                 role="group"
+                 aria-label="Testimonial 1 of 3">
+              <div class="testimonial-quote">
+                <svg class="quote-icon" width="32" height="22" viewBox="0 0 32 22" aria-hidden="true">
+                  <path d="M0 22V13.2C0 5.87 4.89 1.22 14.67 0L16 2.2C11.25 3.42 8.8 6.11 8.8 10.27H13.2V22H0ZM16 22V13.2C16 5.87 20.89 1.22 30.67 0L32 2.2C27.25 3.42 24.8 6.11 24.8 10.27H29.2V22H16Z" fill="currentColor"/>
+                </svg>
+                <p class="quote-text">
+                  "Apex transformed my retirement outlook completely. Their advisors took time
+                  to understand my goals and built a strategy that's already outperformed my
+                  expectations. I sleep better knowing my future is in expert hands."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="avatar" aria-hidden="true">RH</div>
+                <div class="author-info">
+                  <strong class="author-name">Robert Henderson</strong>
+                  <span class="author-role">Retired Engineer</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card"
+                 role="group"
+                 aria-label="Testimonial 2 of 3">
+              <div class="testimonial-quote">
+                <svg class="quote-icon" width="32" height="22" viewBox="0 0 32 22" aria-hidden="true">
+                  <path d="M0 22V13.2C0 5.87 4.89 1.22 14.67 0L16 2.2C11.25 3.42 8.8 6.11 8.8 10.27H13.2V22H0ZM16 22V13.2C16 5.87 20.89 1.22 30.67 0L32 2.2C27.25 3.42 24.8 6.11 24.8 10.27H29.2V22H16Z" fill="currentColor"/>
+                </svg>
+                <p class="quote-text">
+                  "As a small business owner I never had time to manage investments properly.
+                  Apex handles everything transparently, with zero hidden fees. My portfolio
+                  has grown 34% over two years — results truly speak for themselves."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="avatar" aria-hidden="true">SP</div>
+                <div class="author-info">
+                  <strong class="author-name">Sarah Patel</strong>
+                  <span class="author-role">Small Business Owner</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card"
+                 role="group"
+                 aria-label="Testimonial 3 of 3">
+              <div class="testimonial-quote">
+                <svg class="quote-icon" width="32" height="22" viewBox="0 0 32 22" aria-hidden="true">
+                  <path d="M0 22V13.2C0 5.87 4.89 1.22 14.67 0L16 2.2C11.25 3.42 8.8 6.11 8.8 10.27H13.2V22H0ZM16 22V13.2C16 5.87 20.89 1.22 30.67 0L32 2.2C27.25 3.42 24.8 6.11 24.8 10.27H29.2V22H16Z" fill="currentColor"/>
+                </svg>
+                <p class="quote-text">
+                  "I was skeptical after bad experiences elsewhere. But the Apex team's
+                  personalized approach and consistent communication won me over completely.
+                  Two years in, my wealth plan is exactly on track. Highly recommend."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="avatar" aria-hidden="true">MC</div>
+                <div class="author-info">
+                  <strong class="author-name">Michael Chen</strong>
+                  <span class="author-role">Technology Executive</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /carousel-track -->
+
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="carousel-prev" aria-label="Previous testimonial">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <polyline points="12,3 6,9 12,15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Select testimonial">
+              <button class="dot active" role="tab" aria-selected="true"  aria-label="Testimonial 1" data-index="0"></button>
+              <button class="dot"        role="tab" aria-selected="false" aria-label="Testimonial 2" data-index="1"></button>
+              <button class="dot"        role="tab" aria-selected="false" aria-label="Testimonial 3" data-index="2"></button>
+            </div>
+
+            <button class="carousel-btn" id="carousel-next" aria-label="Next testimonial">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <polyline points="6,3 12,9 6,15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div><!-- /carousel -->
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         CONTACT FORM
+         SETUP INSTRUCTIONS:
+           1. Replace "your-email@example.com" in the <form action> below with your real address.
+           2. On the very first submission FormSubmit will send you a one-time confirmation
+              email — click the link in it to activate your endpoint before going live.
+           3. Update the _next hidden input to your actual published domain.
+         =================================================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header animate">
+          <p class="section-eyebrow">Start Today</p>
+          <h2 class="section-title" id="contact-title">Get in Touch</h2>
+          <p class="section-subtitle">
+            Ready to take control of your financial future? Our advisors are here
+            to answer every question and build a plan that works for you.
+          </p>
+        </header>
+
+        <div class="form-wrapper animate">
+          <form
+            id="contact-form"
+            action="https://formsubmit.co/your-email@example.com"
+            method="POST"
+            novalidate
+            aria-label="Enquiry form"
+          >
+            <!-- FormSubmit.co configuration -->
+            <input type="hidden" name="_subject"  value="New Enquiry – Apex Asset Management">
+            <input type="hidden" name="_captcha"  value="false">
+            <input type="hidden" name="_template" value="table">
+            <!-- TODO: replace with your live domain after publishing -->
+            <input type="hidden" name="_next"     value="https://yoursite.com/#contact">
+            <!-- Honeypot anti-spam field (must stay hidden) -->
+            <input type="text"   name="_honey"    style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required-mark" aria-hidden="true">*</span></label>
+                <input
+                  type="text" id="name" name="name"
+                  placeholder="Jane Smith"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                  aria-describedby="name-error"
+                >
+                <span class="field-error" id="name-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required-mark" aria-hidden="true">*</span></label>
+                <input
+                  type="email" id="email" name="email"
+                  placeholder="jane@example.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="email-error"
+                >
+                <span class="field-error" id="email-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">
+                  Phone Number
+                  <span class="optional">(optional)</span>
+                </label>
+                <input
+                  type="tel" id="phone" name="phone"
+                  placeholder="+1 (555) 000-0000"
+                  autocomplete="tel"
+                  aria-describedby="phone-error"
+                >
+                <span class="field-error" id="phone-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="investment-range">Investment Range <span class="required-mark" aria-hidden="true">*</span></label>
+                <select
+                  id="investment-range" name="investment_range"
+                  required
+                  aria-required="true"
+                  aria-describedby="range-error"
+                >
+                  <option value="" disabled selected>Select a range…</option>
+                  <option value="Under $50k">Under $50k</option>
+                  <option value="$50k – $250k">$50k – $250k</option>
+                  <option value="$250k – $1M">$250k – $1M</option>
+                  <option value="$1M+">$1M+</option>
+                </select>
+                <span class="field-error" id="range-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required-mark" aria-hidden="true">*</span></label>
+              <textarea
+                id="message" name="message"
+                rows="5"
+                placeholder="Tell us about your financial goals and how we can help…"
+                required
+                aria-required="true"
+                aria-describedby="message-error"
+              ></textarea>
+              <span class="field-error" id="message-error" role="alert"></span>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <!-- Inline success/error message appears here after submission -->
+            <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+       =================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-grid container">
+
+      <div class="footer-brand">
+        <p class="footer-logo">Apex Asset Management</p>
+        <p class="footer-tagline">
+          Building lasting wealth through expertise, integrity, and personalized care.
+        </p>
+        <p class="footer-copy">
+          &copy; <span id="footer-year">2026</span> Apex Asset Management.
+          All rights reserved.
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer quick links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul role="list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h4 class="footer-heading">Connect With Us</h4>
+        <div class="social-icons">
+
+          <!-- LinkedIn -->
+          <a href="#" class="social-link" aria-label="LinkedIn" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+
+          <!-- Twitter / X -->
+          <a href="#" class="social-link" aria-label="Twitter" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="#" class="social-link" aria-label="Facebook" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div><!-- /footer-grid -->
+
+    <div class="footer-disclaimer">
+      <p>
+        <em>
+          Investments carry risk. Past performance does not guarantee future results.
+          Apex Asset Management is not a registered investment adviser. All content on
+          this website is for informational purposes only and does not constitute
+          financial advice. Please consult a qualified financial advisor before making
+          any investment decisions.
+        </em>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

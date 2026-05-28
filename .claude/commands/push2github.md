@@ -61,8 +61,9 @@ Confirm the push succeeded and show the remote URL.
 
 ## Step 6 — Update GitHub Repo About (description + topics)
 
-Use the `gh` CLI to update the repository metadata:
+First check if the `gh` CLI is available by running `gh --version`.
 
+**If `gh` is available:** use it to update the repository metadata:
 1. Read the project to derive a one-sentence description (max 350 chars) that accurately describes what the site/app is.
 2. Derive relevant topic tags (lowercase, hyphen-separated, max 20 tags) from the tech stack and purpose — e.g. `html`, `css`, `javascript`, `static-site`, `asset-management`, `github-pages`.
 3. Run:
@@ -70,6 +71,12 @@ Use the `gh` CLI to update the repository metadata:
    gh repo edit --description "<description>" --add-topic <topic1> --add-topic <topic2> ...
    ```
 4. Confirm success.
+
+**If `gh` is NOT available:** tell the user it is not installed and provide:
+- The description text you derived (ready to paste)
+- The topic tags list (ready to paste)
+- Instructions: go to the repo on GitHub → click the gear icon next to "About" → paste description and topics there.
+- Optional install note: `winget install --id GitHub.cli` (Windows) or `brew install gh` (macOS).
 
 ## Step 7 — Final Report
 

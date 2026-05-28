@@ -4,6 +4,8 @@ A modern, professional one-page website for an asset management firm — built w
 
 **Live site:** [rbamclaude.github.io/assetmanagement](https://rbamclaude.github.io/assetmanagement/)
 
+![Apex Asset Management screenshot](screenshot.png)
+
 ---
 
 ## Sections
